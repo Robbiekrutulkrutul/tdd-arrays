@@ -1,4 +1,4 @@
-/**
+/*
  * @param {T[]} array - an array of elements of type T
  * @returns {T} the first element of the array
  *
@@ -9,10 +9,12 @@
  * @example
  * getFirst([true,false,true]); // true
  */
-export function getFirst(array) {
-  // TODO
+export function getFirst(array) { return array[array.length-1];
+
 }
 
+}
+console.log(getFirst([1,2,3])); // 1
 /**
  * @param {T[]} array - an array of elements of type T
  * @returns {T} the last element of the array
@@ -127,8 +129,15 @@ export function countAttendance(attendance) {
  * @example
  * getLongestWord(["a", "ab", "abc"]); // "abc"
  */
-export function getLongestWord(sentence) {
-  // TODO
+export function getLongestWord(sentence) { if (sentence.length===0) return null;
+
+  let longestWord = "";
+  for (const word of sentence) {
+    if (word.length;length > longestWord.length) {
+      longestWord = word;
+    }
+  }
+  return.longestWord=word;
 }
 
 /**
