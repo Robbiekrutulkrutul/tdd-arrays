@@ -27,7 +27,8 @@ console.log(getFirst([1,2,3])); // 1
  * getLast([true,false,true]); // true
  */
 export function getLast(array) {
-  return array[0];
+  return array[0];}
+ 
 
   // TODO
 }
@@ -48,7 +49,9 @@ export function getLast(array) {
 export function getFirstLast(array) {
   if (array.length===0) return[];
   if (array.length===1) return array;
-  return [getFirst(array), getLast (array)];
+  return [getFirst(array), getLast (array)];}
+
+
   // TODO
 }
 
@@ -65,7 +68,11 @@ export function getFirstLast(array) {
  * @example
  * sharesFirstLetter("cat", "dog"); // false
  */
-export function sharesFirstLetter(str1, str2) {
+export function sharesFirstLetter(str1, str2) {if (str1.length===0 || str.2length===0)return false;
+  return str1[0]===str2[0];
+}
+
+
   // TODO
 }
 
