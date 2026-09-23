@@ -9,7 +9,8 @@
  * @example
  * getFirst([true,false,true]); // true
  */
-export function getFirst(array) { return array[array.length-1];
+export function getFirst(array) { 
+  return array[0];
 
 }
 
@@ -69,7 +70,7 @@ export function getFirstLast(array) {
  * sharesFirstLetter("cat", "dog"); // false
  */
 export function sharesFirstLetter(str1, str2) {if (str1.length===0 || str.2length===0)return false;
-  return str1[0]===str2[0];
+  return str1[0] ===str2[0];
 }
 
 
@@ -87,8 +88,11 @@ export function sharesFirstLetter(str1, str2) {if (str1.length===0 || str.2lengt
  * @example
  * quintuple([]); // []
  */
-export function quintuple(numbers) {
-  // TODO
+export function quintuple(numbers) {const result = [];
+  for (const number of numbers) {
+    result.push(number * 5);
+  }
+  return result;
 }
 
 /**
