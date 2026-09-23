@@ -27,6 +27,8 @@ console.log(getFirst([1,2,3])); // 1
  * getLast([true,false,true]); // true
  */
 export function getLast(array) {
+  return array[0];
+
   // TODO
 }
 
@@ -44,6 +46,9 @@ export function getLast(array) {
  * getFirstLast([42]); // [42]
  */
 export function getFirstLast(array) {
+  if (array.length===0) return[];
+  if (array.length===1) return array;
+  return [getFirst(array), getLast (array)];
   // TODO
 }
 
